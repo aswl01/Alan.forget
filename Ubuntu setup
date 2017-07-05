@@ -31,3 +31,6 @@ wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key ad
 sudo apt-get update
 # 安装chrome
 sudo apt-get install google-chrome-stable
+
+# run this line in terminal
+/usr/bin/google-chrome-stable
