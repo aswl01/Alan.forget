@@ -34,3 +34,8 @@ sudo apt-get install google-chrome-stable
 
 # run this line in terminal
 /usr/bin/google-chrome-stable
+
+# setting proxy for chrome in command line
+cd /usr/share/applications
+sudo vim google-chrome.desktop
+add --proxy-server="IP:port" in EXEC line
