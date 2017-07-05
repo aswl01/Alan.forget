@@ -1,0 +1,33 @@
+#Setting Proxy For Ubuntu 16.04 LTS
+配置环境
+
+#/.bashrc
+export http_proxy=http://username:password@proxy_server:proxy_port/
+
+
+配置apt 代理
+
+#/etc/apt/apt.conf.d/30proxy
+Acquire::http::Proxy "http://username:password@proxy_server:proxy_port/";
+
+
+#Setting Proxy For Wget
+#You can set the default proxies for Wget to use for http, https, and ftp.
+# They will override the value in the environment.
+vim /etc/wgetrc
+https_proxy = http://127.0.0.1:8087/
+http_proxy = http://127.0.0.1:8087/
+ftp_proxy = http://127.0.0.1:8087/
+
+# If you do not want to use proxy at all, set this to off.
+use_proxy = on
+
+#Download Chrome on Ubuntu
+# 将下载源加入系统源列表
+sudo wget http://www.linuxidc.com/files/repo/google-chrome.list -P /etc/apt/sources.list.d/
+# 导入谷歌软件公钥
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+# 更新源
+sudo apt-get update
+# 安装chrome
+sudo apt-get install google-chrome-stable
