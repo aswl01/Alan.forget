@@ -39,3 +39,13 @@ sudo apt-get install google-chrome-stable
 cd /usr/share/applications
 sudo vim google-chrome.desktop
 add --proxy-server="IP:port" in EXEC line
+
+# install bazel
+# 1. Add Bazel distribution URI as a package source (one time setup)
+echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
+curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
+
+# 2. Install and update Bazel
+sudo apt-get update && sudo apt-get install bazel
+# Once installed, you can upgrade to a newer version of Bazel with:
+sudo apt-get upgrade bazel
