@@ -49,3 +49,20 @@ curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
 sudo apt-get update && sudo apt-get install bazel
 # Once installed, you can upgrade to a newer version of Bazel with:
 sudo apt-get upgrade bazel
+
+
+
+
+# Ubuntu install JDK
+Download JDK
+sudo mkdir /usr/local/java
+sudo tar -zxvf jdk-8u131-linux-x64.tar.gz -C /usr/local/java
+sudo apt-get install vim
+
+vim /etc/profile
+  # set java environment
+  JAVA_HOME=/usr/local/java/jdk1.8.0.131
+  CLASSPATH=.:$JAVA_HOME/lib.tools.jar
+  PATH=$JAVA_HOME/bin:$PATH
+  export JAVA_HOME CLASSPATH PATH
+source /etc/profile
