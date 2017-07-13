@@ -85,7 +85,32 @@ mysql> flush privileges;
 ####################################################3
 # if connection error-> shut down firewall
 /sbin/iptables -I INPUT -p tcp --dport 3306 -j ACCEPT
+/etc/rc.d/init.d/iptables save
 
 # github 本地创建SSH key，然后将生成的SSH key文件内容添加到github帐号上去。
 ssh-keygen
 cat ~/.ssh/id_rsa.pub
+
+# Ubuntu install tomcat
+# Download the newest Tomcat from  http://tomcat.apache.org/download-90.cgi
+tar -zxvf apache-tomcat-9.0.0.M22.tar.gz 
+sudo cp -r apache-tomcat-9.0.0.M22 /opt
+cd /opt/apache-tomcat-9.0.0.M22/
+sudo vim ./bin/startup.sh
+
+# append this
+	JAVA_HOME=/usr/local/java/jdk1.8.0.131
+	JRE_HOME=$JAVA_HOME/jre
+	PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME
+	CLASSPATH=.:$JRE_HOME/lib/rt.jar:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+	TOMCAT_HOME=/opt/apache-tomcat-9.0.0.M22
+
+# Tomcat startup
+sudo ./bin/startup.sh
+
+# Tomcat shutdown
+sudo ./bin/shutdown.sh
+
+
+
+
