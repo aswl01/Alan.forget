@@ -81,3 +81,7 @@ sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
 # comment out bind-address = 127.0.0.1： 
 mysql> grant all on *.* to root@'%' identified by 'root' with grant option;
 mysql> flush privileges;
+
+####################################################3
+# if connection error-> shut down firewall
+/sbin/iptables -I INPUT -p tcp --dport 3306 -j ACCEPT
