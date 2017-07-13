@@ -85,3 +85,7 @@ mysql> flush privileges;
 ####################################################3
 # if connection error-> shut down firewall
 /sbin/iptables -I INPUT -p tcp --dport 3306 -j ACCEPT
+
+# github 本地创建SSH key，然后将生成的SSH key文件内容添加到github帐号上去。
+ssh-keygen
+cat ~/.ssh/id_rsa.pub
