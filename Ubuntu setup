@@ -66,3 +66,18 @@ vim /etc/profile
   PATH=$JAVA_HOME/bin:$PATH
   export JAVA_HOME CLASSPATH PATH
 source /etc/profile
+
+
+# Ubuntu install Mysql
+sudo apt-get install mysql-server
+sudo apt install mysql-client
+sudo apt install libmysqlclient-dev
+
+# checking 
+sudo netstat -tap | grep mysql
+
+# setting remote access
+sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+# comment out bind-address = 127.0.0.1： 
+mysql> grant all on *.* to root@'%' identified by 'root' with grant option;
+mysql> flush privileges;
