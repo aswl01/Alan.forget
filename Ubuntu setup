@@ -112,8 +112,65 @@ sudo ./bin/startup.sh
 # Tomcat shutdown
 sudo ./bin/shutdown.sh
 
+# Ubuntu install Hue Hadoop
+# INstalling Pre-Requisite Stuff
+sudo apt-get install git ant gcc g++ libffi-dev libkrb5-dev libmysqlclient-dev libsasl2-dev libsasl2-modules-gssapi-mit libsqlite3-dev libssl-dev libxml2-dev libxslt-dev make maven libldap2-dev python-dev python-setuptools libgmp3-dev
+
+Oracle's JDK
+
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java7-installer
+mvn (from maven package or maven3 tarball)
+openldap-dev / libldap2-dev
+libtidy-0.99-0 (for unit tests only)
+
+# start install Hue
+sudo apt-get install git
+cd ~/Download
+git clone https://github.com/cloudera/hue.git
+cd hue
+sudo make apps
+sudo ./build/env/bin/hue runserver
+# Now visit http://127.0.0.1:8000 to hue 4
 
 # Ubuntu install redis
+Download newest redis from https://redis.io/download
 
+tar -zxvf redis-4.0.0.tar.gz 
+cd redis-4.0.0/
+ll
+make
+sudo make PREFIX=/usr/local/redis install
 
+# 在/usr/local/redis/bin 下有几个可执行文件
+redis-benchmark		----性能测试工具
+redis-check-rdb  	----RDB文件检查工具（快照持久化文件）
+redis-sentinel		
+redis-check-aof  	----AOF文件修复工具
+redis-cli        	----命令行客户端
+redis-server		----redis服务器启动命令
 
+# 最后
+cd ~/Downloads/
+cd redis-4.0.0/
+sudo cp redis.conf /usr/local/redis/
+
+## port number
+# mysql 3306
+# redis 6379
+# tomcat 8080
+
+# ./bin/redis-cli 默认连接本地的6379端口
+# 可以使用一下命令 连接外网
+./bin/redis-cli -h 127.0.0.1 -p 6379
+
+# 设置后端启动的方式
+vim /usr/local/redis/redis.conf
+# set daemonize to yes
+./bin/redis-server ./redis.conf 
+ps -ef | grep -i redis
+# 可以启动集群
+# 如果出现can't save 错误 无法正常关闭server 是因为permission 问题
+# sudo chmod 777 -R bin/
+# sudo chmod 666 redis.conf
