@@ -174,3 +174,7 @@ ps -ef | grep -i redis
 # 如果出现can't save 错误 无法正常关闭server 是因为permission 问题
 # sudo chmod 777 -R bin/
 # sudo chmod 666 redis.conf
+
+# linux 自动挂载
+sudo vim /etc/fstab 
+/dev/硬盘名称	/挂载点	ext4	defaults	0	0
