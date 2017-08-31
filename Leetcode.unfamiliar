@@ -23,6 +23,8 @@ Leetcode:
 501. Find Mode in Binary Search Tree
 404. Sum of Left Leaves
 377. Combination Sum IV
+64. Minimum Path Sum
+
 
 Better:
 503. Next Greater Element II
@@ -30,3 +32,4 @@ Better:
 581. Shortest Unsorted Continuous Subarray
 387. First Unique Character in a String
 438. Find All Anagrams in a String
+62. Unique Paths
