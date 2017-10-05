@@ -1,6 +1,5 @@
 Leetcode:
 547. Friend Circles
-101. Symmetric Tree
 104. Maximum Depth of Binary Tree
 113. Path Sum II
 437. Path Sum III
@@ -167,5 +166,8 @@ Better:
 285. Inorder Successor in BST
 147. Insertion Sort List
 277. Find the Celebrity
+
+second round:
 300. Longest Increasing Subsequence
 647. Palindromic Substrings
+101. Symmetric Tree
