@@ -50,7 +50,6 @@ Leetcode:
 55. Jump Game
 84. Largest Rectangle in Histogram
 41. First Missing Positive
-647. Palindromic Substrings
 413. Arithmetic Slices
 486. Predict the Winner
 494. Target Sum
@@ -169,3 +168,4 @@ Better:
 147. Insertion Sort List
 277. Find the Celebrity
 300. Longest Increasing Subsequence
+647. Palindromic Substrings
