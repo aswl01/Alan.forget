@@ -59,7 +59,6 @@ Leetcode:
 96. Unique Binary Search Trees
 474. Ones and Zeroes
 526. Beautiful Arrangement      // unable to understand
-300. Longest Increasing Subsequence
 264. Ugly Number II
 522. Longest Uncommon Subsequence II
 375. Guess Number Higher or Lower II
@@ -169,3 +168,4 @@ Better:
 285. Inorder Successor in BST
 147. Insertion Sort List
 277. Find the Celebrity
+300. Longest Increasing Subsequence
