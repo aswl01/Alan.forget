@@ -1,12 +1,7 @@
 Leetcode:
 547. Friend Circles
 113. Path Sum II
-437. Path Sum III
 617. Merge Two Binary Trees
-445. Add Two Numbers II
-496. Next Greater Element I
-556. Next Greater Element III
-49. Group Anagrams
 71. Simplify Path
 226. Invert Binary Tree
 240. Search a 2D Matrix II
@@ -121,7 +116,6 @@ Leetcode:
 
 
 Better:
-503. Next Greater Element II
 445. Add Two Numbers II
 581. Shortest Unsorted Continuous Subarray
 387. First Unique Character in a String
@@ -172,3 +166,8 @@ second round:
 647. Palindromic Substrings
 101. Symmetric Tree
 104. Maximum Depth of Binary Tree
+445. Add Two Numbers II
+496. Next Greater Element I
+503. Next Greater Element II
+556. Next Greater Element III
+49. Group Anagrams
