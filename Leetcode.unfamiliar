@@ -5,12 +5,8 @@ Leetcode:
 71. Simplify Path
 226. Invert Binary Tree
 240. Search a 2D Matrix II
-121. Best Time to Buy and Sell Stock
-665. Non-decreasing Array
 653. Two Sum IV - Input is a BST
 290. Word Pattern
-406. Queue Reconstruction by Height
-530. Minimum Absolute Difference in BST
 563. Binary Tree Tilt
 501. Find Mode in Binary Search Tree
 404. Sum of Left Leaves
@@ -160,6 +156,7 @@ Better:
 277. Find the Celebrity
 697. Degree of an Array
 
+
 second round:
 300. Longest Increasing Subsequence
 647. Palindromic Substrings
@@ -171,3 +168,7 @@ second round:
 556. Next Greater Element III
 49. Group Anagrams
 24. Swap Nodes in Pairs
+121. Best Time to Buy and Sell Stock
+665. Non-decreasing Array
+406. Queue Reconstruction by Height
+530. Minimum Absolute Difference in BST
