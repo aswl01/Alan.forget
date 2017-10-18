@@ -14,14 +14,9 @@ Leetcode:
 131. Palindrome Partitioning
 132. Palindrome Partitioning II
 565. Array Nesting
-
 405. Convert a Number to Hexadecimal
-142. Linked List Cycle II
 287. Find the Duplicate Number
-543. Diameter of Binary Tree
-236. Lowest Common Ancestor of a Binary Tree
 479. Largest Palindrome Product
-162. Find Peak Element
 611. Valid Triangle Number
 73. Set Matrix Zeroes
 81. Search in Rotated Sorted Array II
@@ -153,7 +148,7 @@ Better:
 147. Insertion Sort List
 277. Find the Celebrity
 697. Degree of an Array
-
+142. Linked List Cycle II
 
 second round:
 300. Longest Increasing Subsequence
@@ -175,3 +170,6 @@ second round:
 64. Minimum Path Sum
 78. Subsets
 203. Remove Linked List Elements
+543. Diameter of Binary Tree
+236. Lowest Common Ancestor of a Binary Tree
+162. Find Peak Element
