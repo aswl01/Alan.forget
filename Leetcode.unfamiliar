@@ -17,7 +17,6 @@ Leetcode:
 405. Convert a Number to Hexadecimal
 287. Find the Duplicate Number
 479. Largest Palindrome Product
-611. Valid Triangle Number
 73. Set Matrix Zeroes
 81. Search in Rotated Sorted Array II
 120. Triangle
@@ -173,3 +172,4 @@ second round:
 543. Diameter of Binary Tree
 236. Lowest Common Ancestor of a Binary Tree
 162. Find Peak Element
+611. Valid Triangle Number
