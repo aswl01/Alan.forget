@@ -59,7 +59,6 @@ Leetcode:
 421. Maximum XOR of Two Numbers in an Array     // don't understand
 390. Elimination Game
 636. Exclusive Time of Functions
-89. Gray Code
 525. Contiguous Array
 640. Solve the Equation
 399. Evaluate Division  // graph or union find
@@ -173,3 +172,4 @@ second round:
 516. Longest Palindromic Subsequence
 309. Best Time to Buy and Sell Stock with Cooldown
 462. Minimum Moves to Equal Array Elements II
+89. Gray Code
