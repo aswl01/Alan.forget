@@ -72,7 +72,6 @@ Leetcode:
 604. Design Compressed String Iterator
 157. Read N Characters Given Read4
 280. Wiggle Sort
-369. Plus One Linked List
 573. Squirrel Simulation
 311. Sparse Matrix Multiplication
 666. Path Sum IV
@@ -173,3 +172,4 @@ second round:
 462. Minimum Moves to Equal Array Elements II
 89. Gray Code
 662. Maximum Width of Binary Tree
+369. Plus One Linked List
