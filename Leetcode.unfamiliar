@@ -62,7 +62,7 @@ Leetcode:
 421. Maximum XOR of Two Numbers in an Array     // don't understand
 390. Elimination Game
 636. Exclusive Time of Functions
-525. Contiguous Array
+5. Contiguous Array
 640. Solve the Equation
 399. Evaluate Division  // graph or union find
 341. Flatten Nested List Iterator
@@ -309,3 +309,19 @@ Third round:
 621. Task Scheduler
 767. Reorganize String
 358. Rearrange String k Distance Apart
+93. Restore IP Addresses
+25. Reverse Nodes in k-Group
+395. Longest Substring with At Least K Repeating Characters
+113. Path Sum II
+666. Path Sum IV
+385. Mini Parser
+439. Ternary Expression Parser
+394. Decode String
+565. Array Nesting
+364. Nested List Weight Sum II
+114. Flatten Binary Tree to Linked List
+255. Verify Preorder Sequence in Binary Search Tree
+145. Binary Tree Postorder Traversal
+480. Sliding Window Median
+282. Expression Add Operators
+52. N-Queens II
